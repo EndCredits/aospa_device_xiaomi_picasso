@@ -417,6 +417,9 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
+    
+# Platform
+TARGET_BOARD_PLATFORM := lito
 
 # QMI
 PRODUCT_PACKAGES += \
