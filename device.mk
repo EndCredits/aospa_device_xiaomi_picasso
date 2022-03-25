@@ -340,6 +340,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     usb \
+    vibrator \
     wlan
 
 # RenderScript
@@ -384,15 +385,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
-
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
-
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor
 
 # WiFi
 PRODUCT_COPY_FILES += \
