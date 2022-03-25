@@ -410,9 +410,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -424,6 +421,10 @@ TARGET_BOARD_PLATFORM := lito
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # RenderScript
 PRODUCT_PACKAGES += \
