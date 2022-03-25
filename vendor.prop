@@ -63,9 +63,6 @@ ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=31
 ro.vendor.audio.soundtrigger.appdefine.vop.level=10
 
-# Bluetooth
-persist.vendor.qcom.bluetooth.soc=cherokee
-
 # Camera
 camera.disable_zsl_mode=true
 persist.camera.gyro.disable=0
