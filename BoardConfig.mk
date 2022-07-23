@@ -48,9 +48,8 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_VERSION := 4.19
-TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
-TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
+KERNEL_DEFCONFIG := vendor/picasso_user_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
@@ -159,8 +158,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
